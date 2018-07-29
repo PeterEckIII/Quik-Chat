@@ -6,8 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Websocket App</title>
     <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
 </head>
 <body>
-    <h1>Here it is!</h1>
+    <h1>Quik Chat</h1>
+    <div id="chat">
+        <div id="chat-window">
+            <div id="output"></div>
+            <div class="feedback"></div>
+        </div>
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="message" placeholder="Message">
+        <button id="send-message">Send</button>
+    </div>
+    <script src="chat.js"></script>
 </body>
 </html>
